@@ -24,7 +24,7 @@ export function SnapShare() {
     typeof window !== "undefined"
       ? window.location.href
       : "https://example.com";
-  const hashtags = ["#JayRHeartsJen", "#JenLovesJayR"];  
+  const hashtags = ["#AnJENaAngForeverNiJAYR"];  
   const shareText = `Join us in celebrating Jay-R & Jen's special day! Check out their wedding website: ${websiteUrl} ${hashtags.join(" ")} 💕`;
 
   useEffect(() => {

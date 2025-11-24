@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "You're invited to the wedding of Jay-R & Jennifer! Join us on January 24, 2026 at Diocesan Shrine & Parish of Our Lady of the Abandoned and The Grand Cobo Events Place. RSVP, read our love story, view our gallery, and leave a message for the couple.",
   keywords:
-    "Jay-R & Jennifer wedding, Filipino wedding, RSVP, wedding gallery, wedding message wall, wedding invitation, 2026 weddings, love story, guestbook, wedding registry, wedding details, wedding venues Diocesan Shrine & Parish of Our Lady of the Abandoned, #Jay-RAndJenniferWedding",
+    "Jay-R & Jennifer wedding, Filipino wedding, RSVP, wedding gallery, wedding message wall, wedding invitation, 2026 weddings, love story, guestbook, wedding registry, wedding details, wedding venues Diocesan Shrine & Parish of Our Lady of the Abandoned, #AnJENaAngForeverNiJAYR",
   authors: [
     { name: "Jay-R" },
     { name: "Jennifer" },
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jay-R & Jennifer Wedding Invitation",
     description:
-      "You're invited to the wedding of Jay-R & Jennifer! January 24, 2026. RSVP, view our gallery, and leave a message! #Jay-RAndJenniferWedding",
+      "You're invited to the wedding of Jay-R & Jennifer! January 24, 2026. RSVP, view our gallery, and leave a message! #AnJENaAngForeverNiJAYR",
     images: ["https://jay-r-and-jennifer-wedding-invitati.vercel.app/Details/image.png"],
     creator: "@jay-r-and-jennifer",
   },
@@ -147,7 +147,7 @@ export const metadata: Metadata = {
         price: "0",
         priceCurrency: "PHP",
       },
-        eventHashtag: "#Jay-RAndJenniferForever #Jay-RAndJennifer2026",
+        eventHashtag: "#AnJENaAngForeverNiJAYR",
     }),
   },
 }
