@@ -28,13 +28,13 @@ export function Details() {
   // Updated venue information
   const ceremonyVenueName = "Diocesan Shrine & Parish of Our Lady of the Abandoned"
   const ceremonyVenueDetail = ""
-  const ceremonyAddress = "#3 Mt. Kennedy St., Mountainview Village, San Roque, Marikina City"
+  const ceremonyAddress = "JP Rizal St., Sta. Elena, Marikina City"
   const ceremonyVenue = `${ceremonyVenueName}, ${ceremonyAddress}`
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(ceremonyVenue)}`
 
   const receptionVenueName = "The Grand Cobo Events Place"
   const receptionVenueDetail = ""
-  const receptionAddress = "#3 Mt. Kennedy St., Mountainview Village, San Roque, Marikina City"
+  const receptionAddress = "3 Mt. Kennedy St., Mountainview Village, Brgy. San Roque, Marikina City"
   const receptionVenue = `${receptionVenueName}, ${receptionAddress}`
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(receptionVenue)}`
 
