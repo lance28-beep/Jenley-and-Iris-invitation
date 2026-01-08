@@ -33,7 +33,7 @@ const faqItems: FAQItem[] = [
   {
     question: "Are children allowed?",
     answer:
-      "We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. Children in our family and the entourage are the exception. We appreciate your understanding!",
+      "Yes, children are welcome! We'd love to celebrate with your whole family, including your little ones. We look forward to seeing everyone!",
   },
   {
     question: "What is your gift policy?",

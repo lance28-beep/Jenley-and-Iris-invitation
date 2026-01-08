@@ -389,13 +389,6 @@ export function Details() {
                 </p>
               </div>
 
-              {/* Adults Only */}
-              <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
-                  <span className="font-semibold">Adults-Only Event:</span> We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception)
-                </p>
-              </div>
-
               {/* No Photos */}
               <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">

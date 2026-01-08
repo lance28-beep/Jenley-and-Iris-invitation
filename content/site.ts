@@ -22,7 +22,7 @@ export const siteConfig = {
     policies: {
       attendance: "As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation",
       gifts: "We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected.",
-      children: "We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception)",
+      children: "Yes, children are welcome! We'd love to celebrate with your whole family, including your little ones.",
       photos: "We'd love for everyone to be fully present. Please avoid posting photos during the celebration or ahead of time—our photographers will take care of the memories"
     }
   },

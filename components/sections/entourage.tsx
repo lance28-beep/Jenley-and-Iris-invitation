@@ -16,6 +16,8 @@ const ROLE_CATEGORY_ORDER = [
   "Parents of the Groom",
   "Parents of the Bride",
   "Best Man",
+  "Best Woman",
+  "Man of Honor",
   "Maid of Honor",
   "Candle Sponsors",
   "Veil Sponsors",
@@ -422,19 +424,19 @@ export function Entourage() {
                       return null;
                     }
 
-                    // Special handling for Maid of Honor and Best Man - combine into single two-column layout
+                    // Special handling for Best Man and Best Woman - combine into single two-column layout
                     if (
-                      category === "Maid of Honor" ||
-                      category === "Best Man"
+                      category === "Best Man" ||
+                      category === "Best Woman"
                     ) {
-                      // Get both honor attendant groups
-                      const maidOfHonor = grouped["Maid of Honor"] || [];
+                      // Get both best attendant groups
                       const bestMan = grouped["Best Man"] || [];
+                      const bestWoman = grouped["Best Woman"] || [];
 
                       // Only render once (when processing "Best Man")
                       if (category === "Best Man") {
                         return (
-                          <div key="HonorAttendants">
+                          <div key="BestAttendants">
                             {categoryIndex > 0 && (
                               <div className="flex items-center justify-center gap-3 sm:gap-4 py-4 sm:py-5 mb-6 sm:mb-7 md:mb-9">
                                 <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/40" />
@@ -444,19 +446,19 @@ export function Entourage() {
                             )}
                             <TwoColumnLayout
                               leftTitle="Best Man"
-                              rightTitle="Maid of Honor"
+                              rightTitle="Best Woman"
                             >
                               {(() => {
                                 const maxLen = Math.max(
                                   bestMan.length,
-                                  maidOfHonor.length,
+                                  bestWoman.length,
                                 );
                                 const rows = [];
                                 for (let i = 0; i < maxLen; i++) {
                                   const left = bestMan[i];
-                                  const right = maidOfHonor[i];
+                                  const right = bestWoman[i];
                                   rows.push(
-                                    <React.Fragment key={`honor-row-${i}`}>
+                                    <React.Fragment key={`best-row-${i}`}>
                                       <div
                                         key={`bestman-cell-${i}`}
                                         className="px-2 sm:px-3 md:px-4"
@@ -471,7 +473,81 @@ export function Entourage() {
                                         )}
                                       </div>
                                       <div
-                                        key={`maid-cell-${i}`}
+                                        key={`bestwoman-cell-${i}`}
+                                        className="px-2 sm:px-3 md:px-4"
+                                      >
+                                        {right ? (
+                                          <NameItem
+                                            member={right}
+                                            align="left"
+                                          />
+                                        ) : (
+                                          <div className="py-0.5 sm:py-1 md:py-1.5" />
+                                        )}
+                                      </div>
+                                    </React.Fragment>,
+                                  );
+                                }
+                                return rows;
+                              })()}
+                            </TwoColumnLayout>
+                          </div>
+                        );
+                      }
+                      // Skip rendering for "Best Woman" since it's already rendered above
+                      return null;
+                    }
+
+                    // Special handling for Man of Honor and Maid of Honor - combine into single two-column layout
+                    if (
+                      category === "Man of Honor" ||
+                      category === "Maid of Honor"
+                    ) {
+                      // Get both honor attendant groups
+                      const manOfHonor = grouped["Man of Honor"] || [];
+                      const maidOfHonor = grouped["Maid of Honor"] || [];
+
+                      // Only render once (when processing "Man of Honor")
+                      if (category === "Man of Honor") {
+                        return (
+                          <div key="HonorAttendants">
+                            {categoryIndex > 0 && (
+                              <div className="flex items-center justify-center gap-3 sm:gap-4 py-4 sm:py-5 mb-6 sm:mb-7 md:mb-9">
+                                <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/40" />
+                                <div className="w-1.5 h-1.5 bg-[#800A06]/50 rounded-full" />
+                                <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/40" />
+                              </div>
+                            )}
+                            <TwoColumnLayout
+                              leftTitle="Man of Honor"
+                              rightTitle="Maid of Honor"
+                            >
+                              {(() => {
+                                const maxLen = Math.max(
+                                  manOfHonor.length,
+                                  maidOfHonor.length,
+                                );
+                                const rows = [];
+                                for (let i = 0; i < maxLen; i++) {
+                                  const left = manOfHonor[i];
+                                  const right = maidOfHonor[i];
+                                  rows.push(
+                                    <React.Fragment key={`honor-row-${i}`}>
+                                      <div
+                                        key={`manofhonor-cell-${i}`}
+                                        className="px-2 sm:px-3 md:px-4"
+                                      >
+                                        {left ? (
+                                          <NameItem
+                                            member={left}
+                                            align="right"
+                                          />
+                                        ) : (
+                                          <div className="py-0.5 sm:py-1 md:py-1.5" />
+                                        )}
+                                      </div>
+                                      <div
+                                        key={`maidofhonor-cell-${i}`}
                                         className="px-2 sm:px-3 md:px-4"
                                       >
                                         {right ? (
@@ -660,8 +736,8 @@ export function Entourage() {
                         >
                           {(() => {
                             const SINGLE_COLUMN_SECTIONS = new Set([
-                              "Best Man",
-                              "Maid of Honor",
+                              "Best Woman",
+                              "Man of Honor",
                               "Ring Bearer",
                               "Coin Bearer",
                               "Bible Bearer",
