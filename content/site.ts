@@ -1,23 +1,23 @@
 export const siteConfig = {
   couple: {
-    bride: "Diana Grace Villorente",
-    brideNickname: "Diana Grace",
-    groom: "Mark Joey Ulzame",
-    groomNickname: "Mark Joey",
+    bride: "Iris Nicole Y. Uy",
+    brideNickname: "Iris",
+    groom: "Jenley Macalalad",
+    groomNickname: "Jenley",
   },
   wedding: {
-    date: "February 8, 2026",
-    time: "1:30 PM",
-    venue: "MATER DOLOROSA Parish in Capas",
+    date: "November 7, 2026",
+    time: "2:00 PM",
+    venue: "Abad Church",
     tagline: "are getting married!",
     theme: "Elegant Wedding ✨",
     motif: "Autumn Theme",
   },
   details: {
     rsvp: {
-      deadline: "January 25, 2026",
+      deadline: "October 25, 2026",
       contacts: "+639XXXXXXXXX | +639XXXXXXXXX",
-      names: "Mark Joey & Diana Grace"
+      names: "Jenley & Iris"
     },
     policies: {
       attendance: "As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation",
@@ -27,21 +27,21 @@ export const siteConfig = {
     }
   },
   ceremony: {
-    location: "MATER DOLOROSA Parish in Capas",
-    venue: "MATER DOLOROSA Parish in Capas",
-    address: "Capas, Tarlac",
-    date: "February 8, 2026",
-    day: "Sunday",
-    time: "1:30 PM",
-    entourageTime: "12:30 PM",
-    guestsTime: "1:00 PM",
+    location: "Abad Church",
+    venue: "Abad Church",
+    address: "",
+    date: "November 7, 2026",
+    day: "Saturday",
+    time: "2:00 PM",
+    entourageTime: "1:00 PM",
+    guestsTime: "1:30 PM",
   },
   reception: {
-    location: "Cz Ranch",
-    venue: "Cz Ranch",
-    address: "Capas, Tarlac",
-    date: "February 8, 2026",
-    time: "4:00 PM",
+    location: "Sugarbowl",
+    venue: "Sugarbowl",
+    address: "Sugar Land Hotel, Bacolod",
+    date: "November 7, 2026",
+    time: "6:00 PM",
   },
   dressCode: {
     theme: "Elegant Wedding ✨",
@@ -57,7 +57,7 @@ export const siteConfig = {
     },
     note: "Dress code: Earth tones, long gowns for ladies. Barong & black slacks or formal wear for gentlemen. No prints, please."
   },
-  narrative: `Two hearts, one love story. Mark Joey and Diana Grace are ready to begin their forever together. \n
+  narrative: `Two hearts, one love story. Jenley and Iris are ready to begin their forever together. \n
 
 Join us as we celebrate their love and commitment to each other on this special day. \n
 

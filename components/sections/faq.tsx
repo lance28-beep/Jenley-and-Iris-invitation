@@ -13,7 +13,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When and where is the wedding?",
     answer:
-      "The wedding ceremony will be held on Sunday, February 8, 2026, at 1:30 PM at the MATER DOLOROSA Parish in Capas, Capas, Tarlac.\n\nThe reception will follow at 4:00 PM at Cz Ranch, Capas, Tarlac.",
+      "The wedding ceremony will be held on Saturday, November 7, 2026, at 2:00 PM at Abad Church.\n\nThe reception will follow at 6:00 PM at Sugarbowl, Sugar Land Hotel, Bacolod.",
   },
   {
     question: "What is the dress code?",
@@ -23,7 +23,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When is the RSVP deadline?",
     answer:
-      "Please confirm your attendance by January 25, 2026. We have reserved seats for you, and we look forward to celebrating with you! Your response helps us finalize our guest list and seating arrangements.\n\n[RSVP_LINK]Click here to RSVP[/RSVP_LINK]",
+      "Please confirm your attendance by October 25, 2026. We have reserved seats for you, and we look forward to celebrating with you! Your response helps us finalize our guest list and seating arrangements.\n\n[RSVP_LINK]Click here to RSVP[/RSVP_LINK]",
   },
   {
     question: "Can I bring a plus one?",
@@ -48,22 +48,22 @@ const faqItems: FAQItem[] = [
   {
     question: "What if I have dietary restrictions or allergies?",
     answer:
-      "Please mention any dietary restrictions, allergies, or special meal requirements in the message field when you submit your RSVP, or contact Mark Joey & Diana Grace directly. We want to ensure everyone is comfortable and well-fed!",
+      "Please mention any dietary restrictions, allergies, or special meal requirements in the message field when you submit your RSVP, or contact Jenley & Iris directly. We want to ensure everyone is comfortable and well-fed!",
   },
   {
     question: "How do I get to the venue?",
     answer:
-      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for easy navigation to both the ceremony (MATER DOLOROSA Parish in Capas) and reception (Cz Ranch) venues. Both the ceremony and reception are located in Capas, Tarlac.",
+      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for easy navigation to both the ceremony (Abad Church) and reception (Sugarbowl, Sugar Land Hotel, Bacolod) venues.",
   },
   {
     question: "Is there parking available?",
     answer:
-      "Yes! Both the ceremony and reception venues have parking facilities. We recommend arriving 15-20 minutes early to secure a spot and get settled comfortably. For the ceremony, guests should arrive by 1:00 PM.",
+      "Yes! Both the ceremony and reception venues have parking facilities. We recommend arriving 15-20 minutes early to secure a spot and get settled comfortably. For the ceremony, guests should arrive by 1:30 PM.",
   },
   {
     question: "What should I do if I need to cancel or update my RSVP?",
     answer:
-      "Please contact Mark Joey & Diana Grace as soon as possible if your plans change. You can also update your RSVP by searching for your name in the RSVP section and submitting a new response. We appreciate your timely communication!",
+      "Please contact Jenley & Iris as soon as possible if your plans change. You can also update your RSVP by searching for your name in the RSVP section and submitting a new response. We appreciate your timely communication!",
   },
 ];
 

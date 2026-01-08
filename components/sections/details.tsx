@@ -26,15 +26,15 @@ export function Details() {
   }
 
   // Updated venue information
-  const ceremonyVenueName = "MATER DOLOROSA Parish in Capas"
+  const ceremonyVenueName = "Abad Church"
   const ceremonyVenueDetail = ""
-  const ceremonyAddress = "Capas, Tarlac"
-  const ceremonyVenue = `${ceremonyVenueName}, ${ceremonyAddress}`
+  const ceremonyAddress = ""
+  const ceremonyVenue = ceremonyAddress ? `${ceremonyVenueName}, ${ceremonyAddress}` : ceremonyVenueName
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(ceremonyVenue)}`
 
-  const receptionVenueName = "Cz Ranch"
+  const receptionVenueName = "Sugarbowl"
   const receptionVenueDetail = ""
-  const receptionAddress = "Capas, Tarlac"
+  const receptionAddress = "Sugar Land Hotel, Bacolod"
   const receptionVenue = `${receptionVenueName}, ${receptionAddress}`
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(receptionVenue)}`
 
@@ -77,8 +77,8 @@ export function Details() {
             {/* Venue Image */}
             <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 overflow-hidden">
               <Image
-                src="/Details/MATER%20DOLOROSA%20Parish%20in%20Capas.JPG"
-                alt="MATER DOLOROSA Parish in Capas"
+                src="/Details/abad church.png"
+                alt="Abad Church"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
@@ -92,11 +92,8 @@ export function Details() {
                   Ceremony
                 </p>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-normal text-white mb-0.5 sm:mb-1 drop-shadow-lg uppercase tracking-[0.1em] leading-tight">
-                  MATER DOLOROSA
+                  Abad Church
                 </h3>
-                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-white/95 drop-shadow-md tracking-wide">
-                  Parish in Capas
-                </p>
               </div>
             </div>
 
@@ -106,20 +103,20 @@ export function Details() {
               <div className="text-center mb-5 sm:mb-8 md:mb-10">
                 {/* Day name */}
                 <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-[0.2em] mb-2 sm:mb-3">
-                  Sunday
+                  Saturday
                 </p>
                 
                 {/* Month - Script style with warm gold */}
                 <div className="mb-2 sm:mb-4">
                   <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-ephesis)] text-[#800A06] leading-none">
-                    February
+                    November
                   </p>
                 </div>
                 
                 {/* Day and Year */}
                 <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-4 sm:mb-6 md:mb-7">
                   <p className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[family-name:var(--font-crimson)] font-normal text-[#800A06] leading-none elegant-text-shadow">
-                    8
+                    7
                   </p>
                   <div className="h-10 sm:h-12 md:h-16 lg:h-20 w-[2px] bg-gradient-to-b from-[#9F8650] via-[#800A06] to-[#9F8650]" />
                   <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-light text-[#800A06] leading-none">
@@ -136,7 +133,7 @@ export function Details() {
 
                 {/* Time */}
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide">
-                  1:30 PM
+                  2:00 PM
                 </p>
               </div>
 
@@ -156,9 +153,11 @@ export function Details() {
                         {ceremonyVenueDetail}
                       </p>
                     )}
-                    <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed">
-                      {ceremonyAddress}
-                    </p>
+                    {ceremonyAddress && (
+                      <p className="text-[10px] sm:text-xs md:text-sm font-[family-name:var(--font-crimson)] text-[#800A06]/70 leading-relaxed">
+                        {ceremonyAddress}
+                      </p>
+                    )}
                   </div>
                   {/* QR Code for Ceremony - Right side */}
                   <div className="flex flex-col items-center gap-1.5 sm:gap-2 flex-shrink-0">
@@ -216,8 +215,8 @@ export function Details() {
             {/* Venue Image */}
             <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 overflow-hidden">
               <Image
-                src="/Details/Cz%20Ranch.jpg"
-                alt="Cz Ranch"
+                src="/Details/SugarLand.jpg"
+                alt="Sugarbowl"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
@@ -230,10 +229,10 @@ export function Details() {
                   Reception
                 </p>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-normal text-white mb-0.5 sm:mb-1 drop-shadow-lg uppercase tracking-[0.1em] leading-tight">
-                  Cz Ranch
+                  Sugarbowl
                 </h3>
                 <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-white/95 drop-shadow-md tracking-wide">
-                  Capas, Tarlac
+                  Sugar Land Hotel, Bacolod
                 </p>
               </div>
             </div>
@@ -246,7 +245,7 @@ export function Details() {
                   Starts at
                 </p>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide">
-                  4:00 PM
+                  6:00 PM
                 </p>
               </div>
 
@@ -342,84 +341,27 @@ export function Details() {
             
             <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-9 border-2 border-[#9F8650]/30 shadow-lg hover:shadow-xl transition-all duration-300">
               <h4 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] mb-6 sm:mb-7 md:mb-8 uppercase tracking-[0.12em] text-center">
-                Guest Attire
+                Attire Guidelines
               </h4>
               
-              {/* Guest Dress Code Text */}
-              <div className="text-center mb-7 sm:mb-8 md:mb-10">
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed mb-4">
-                  <span className="font-semibold">Ladies:</span> Long gowns in earth tones 
+              {/* Attire Description */}
+              <div className="text-center space-y-4 sm:space-y-5">
+                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] leading-relaxed">
+                  Attire: Formal / Filipino Formal
                 </p>
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
-                  <span className="font-semibold">Gentlemen:</span> Barong Tagalog & black slacks or formal wear
-                </p>
-              </div>
-
-              {/* Decorative divider */}
-              <div className="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-7">
-                <div className="h-px w-12 sm:w-16 md:w-20 bg-[#9F8650]/40" />
-                <div className="w-1.5 h-1.5 bg-[#9F8650]/50 rounded-full" />
-                <div className="h-px w-12 sm:w-16 md:w-20 bg-[#9F8650]/40" />
-              </div>
-              
-              {/* Color Palette - Autumn Theme */}
-              <div className="text-center bg-gradient-to-br from-[#FAAF38]/5 via-transparent to-[#FAAF38]/5 rounded-xl p-5 sm:p-6 md:p-7">
-                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-wider mb-4 sm:mb-5">
-                  Color Palette - Autumn Theme
-                </p>
-                <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#800A06] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#800A06]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#800A06]/70">Dark Red</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#6A1F08] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#6A1F08]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#800A06]/70">Dark Brown</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#9B4719] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#9B4719]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#800A06]/70">Brown</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#FAAF38] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#FAAF38]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#800A06]/70">Golden</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#EFCA93] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#EFCA93]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#800A06]/70">Beige</span>
-                  </div>
-                  <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-3 border-white bg-[#EFD2AA] hover:scale-110 hover:shadow-xl transition-all duration-300 ring-2 ring-[#EFD2AA]/20" />
-                    <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#800A06]/70">Light Beige</span>
-                  </div>
+                
+                <div className="space-y-3 sm:space-y-4">
+                  <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
+                    <span className="font-semibold">Gentlemen:</span> Are encouraged to wear Barong Tagalog or formal suits.
+                  </p>
+                  <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
+                    <span className="font-semibold">Ladies:</span> May wear long gowns, cocktail dresses, or Filipiniana-inspired attire or Chinese inspired dresses. Please no black dresses.
+                  </p>
                 </div>
-                <p className="mt-5 text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#800A06]/80 leading-relaxed">
-                  We kindly request guests to wear autumn tones. 
-                </p>
               </div>
             </div>
           </div>
 
-          {/* Principal Sponsors Attire */}
-          <div className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-br from-[#9F8650]/15 to-[#800A06]/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
-            
-            <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-9 border-2 border-[#9F8650]/30 shadow-lg hover:shadow-xl transition-all duration-300">
-              <h4 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] mb-6 sm:mb-7 md:mb-8 uppercase tracking-[0.12em] text-center">
-                Principal Sponsors' Attire
-              </h4>
-              
-              {/* Sponsors Dress Code Text */}
-              <div className="text-center">
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed mb-4">
-                  <span className="font-semibold">Ninangs:</span> Long gowns in autumn tones or any color from our palette
-                </p>
-                <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
-                  <span className="font-semibold">Ninongs:</span> Barong Tagalog with black slacks, or formal suits in black or palette colors
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Important Reminders Section */}
@@ -464,7 +406,7 @@ export function Details() {
               {/* RSVP Contact */}
               <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
-                  <span className="font-semibold">RSVP Contact:</span> Please reach out to Mark Joey & Diana Grace (contact information to be updated)
+                  <span className="font-semibold">RSVP Contact:</span> Please reach out to Jenley & Iris (contact information to be updated)
                 </p>
               </div>
             </div>

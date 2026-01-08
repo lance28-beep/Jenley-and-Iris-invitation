@@ -27,8 +27,8 @@ export function SnapShare() {
       : "https://example.com";
   const driveLink =
     "https://drive.google.com/drive/folders/18f_-4ZqeyIDZZ_5PR0raFGNRoPUmJCPg?usp=sharing";
-  const hashtags = ["#MarkJoeyAndDianaGrace"];  
-  const shareText = `Join us in celebrating Mark Joey & Diana Grace's special day! Check out their wedding website: ${websiteUrl} ${hashtags.join(" ")} 💕`;
+  const hashtags = ["#JenleyAndIris"];  
+  const shareText = `Join us in celebrating Jenley & Iris's special day! Check out their wedding website: ${websiteUrl} ${hashtags.join(" ")} 💕`;
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -423,7 +423,7 @@ export function SnapShare() {
 
                   <div className="text-center">
                     <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] text-[#800A06] font-semibold">
-                      – Mark Joey & Diana Grace –
+                      – Jenley & Iris –
                     </span>
                   </div>
                 </div>

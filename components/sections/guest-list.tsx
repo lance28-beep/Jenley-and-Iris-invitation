@@ -357,7 +357,7 @@ export function GuestList() {
             
             <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-[#800A06] font-medium max-w-xl mx-auto px-2 mb-4 sm:mb-5`}>
               Kindly confirm your presence on or before:<br />
-              <span className="font-[family-name:var(--font-crimson)] font-light text-base sm:text-lg md:text-xl text-[#800A06]">January 25, 2026</span>
+              <span className="font-[family-name:var(--font-crimson)] font-light text-base sm:text-lg md:text-xl text-[#800A06]">October 25, 2026</span>
             </p>
             
             {/* Decorative element */}

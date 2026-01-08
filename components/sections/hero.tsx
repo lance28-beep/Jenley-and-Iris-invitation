@@ -6,10 +6,10 @@ import { Heart } from "lucide-react"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
-  const ceremonyVenue = "MATER DOLOROSA Parish in Capas"
-  const ceremonyAddress = "Capas, Tarlac"
-  const receptionVenue = "Cz Ranch"
-  const receptionAddress = "Capas, Tarlac"
+  const ceremonyVenue = "Abad Church"
+  const ceremonyAddress = ""
+  const receptionVenue = "Sugarbowl"
+  const receptionAddress = "Sugar Land Hotel, Bacolod"
 
   useEffect(() => {
     setIsVisible(true)
@@ -57,8 +57,8 @@ export function Hero() {
           <div className="flex justify-center mb-2 sm:mb-4">
             <div className="relative w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 lg:w-56 lg:h-56">
               <Image
-                src="/monogram/monogram-new.png"
-                alt="Mark Joey & Diana Grace Monogram"
+                src="/monogram/monogram.png"
+                alt="Jenley & Iris Monogram"
                 fill
                 className="object-contain"
                 priority
@@ -78,7 +78,7 @@ export function Hero() {
 
           {/* Groom Name */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-[family-name:var(--font-crimson)] font-normal text-[#9B4719] uppercase tracking-[0.12em] sm:tracking-[0.15em] leading-tight px-2 elegant-text-shadow">
-            MARK JOEY ULZAME
+            JENLEY MACALALAD
           </h1>
 
           {/* And - Script Style with warm gold accent */}
@@ -88,7 +88,7 @@ export function Hero() {
 
           {/* Bride Name */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-[family-name:var(--font-crimson)] font-normal text-[#9B4719] uppercase tracking-[0.12em] sm:tracking-[0.15em] leading-tight px-2 elegant-text-shadow">
-            DIANA GRACE VILLORENTE
+            IRIS NICOLE Y. UY
           </h1>
 
           {/* Decorative line with earth tones */}
@@ -106,15 +106,15 @@ export function Hero() {
             <div className="flex items-center justify-center gap-3 sm:gap-4">
               <div className="h-[1px] w-12 sm:w-16 md:w-20 bg-gradient-to-r from-transparent via-[#9F8650] to-[#9F8650]" />
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#9F8650] tracking-wider">
-                February
+                November
               </p>
               <div className="h-[1px] w-12 sm:w-16 md:w-20 bg-gradient-to-l from-transparent via-[#9F8650] to-[#9F8650]" />
             </div>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 text-[#9B4719]">
-              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#9F8650]">SUNDAY</span>
-              <span className="text-6xl sm:text-7xl md:text-8xl font-[family-name:var(--font-crimson)] font-light my-2 sm:my-0 elegant-text-shadow">8</span>
-              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#9F8650]">1:30 PM</span>
+              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#9F8650]">SATURDAY</span>
+              <span className="text-6xl sm:text-7xl md:text-8xl font-[family-name:var(--font-crimson)] font-light my-2 sm:my-0 elegant-text-shadow">7</span>
+              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#9F8650]">2:00 PM</span>
             </div>
             
             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-light text-[#9B4719]">
@@ -141,9 +141,11 @@ export function Hero() {
               <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#9F8650] uppercase tracking-wider">
                 {ceremonyVenue}
               </p>
-              <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-normal text-[#9B4719]/80">
-                {ceremonyAddress}
-              </p>
+              {ceremonyAddress && (
+                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-normal text-[#9B4719]/80">
+                  {ceremonyAddress}
+                </p>
+              )}
             </div>
 
             <div className="flex items-center justify-center gap-2">

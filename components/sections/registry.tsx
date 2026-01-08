@@ -2,7 +2,6 @@
 
 import { Section } from "@/components/section";
 import { Heart } from "lucide-react";
-import Image from "next/image";
 
 export function Registry() {
   return (
@@ -43,12 +42,8 @@ export function Registry() {
       {/* Section Header */}
       <div className="relative z-10 text-center mb-6 sm:mb-10 md:mb-12 px-3 sm:px-4 md:px-6">
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-white mb-3 sm:mb-4 md:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] md:tracking-[0.15em]">
-          Gift Registry
+          A Note on Gifts
         </h2>
-
-        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-white font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2 sm:px-4">
-          Your presence is the greatest gift we could ask for
-        </p>
       </div>
 
       {/* Central Card Container */}
@@ -72,54 +67,22 @@ export function Registry() {
 
                 {/* Main message */}
                 <div className="text-center space-y-6 sm:space-y-8 max-w-2xl">
-                  {/* First message */}
-                  <div className="relative">
-                    {/* Decorative top line */}
-                    <div className="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-                      <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/50" />
-                      <div className="w-1.5 h-1.5 bg-[#800A06]/60 rounded-full" />
-                      <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/50" />
-                    </div>
-
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-light text-[#800A06] leading-relaxed tracking-wide">
-                      Your presence at our wedding is the most precious gift.
-                    </p>
+                  {/* Decorative top line */}
+                  <div className="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                    <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/50" />
+                    <div className="w-1.5 h-1.5 bg-[#800A06]/60 rounded-full" />
+                    <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/50" />
                   </div>
 
-                  {/* Second message */}
-                  <div className="relative">
-                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-light text-[#800A06]/80 leading-relaxed tracking-wide">
-                      We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected.
-                    </p>
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-light text-[#800A06] leading-relaxed tracking-wide">
+                    This is a no-gifts event. We wholeheartedly acknowledge the time and effort it took for everyone to be with us. Your presence is our present — thank you.
+                  </p>
 
-                    {/* Decorative bottom line */}
-                    <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
-                      <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/50" />
-                      <div className="w-1.5 h-1.5 bg-[#800A06]/60 rounded-full" />
-                      <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/50" />
-                    </div>
-                  </div>
-
-                  {/* GCash QR Code */}
-                  <div className="relative mt-8 sm:mt-10 md:mt-12">
-                    <div className="flex flex-col items-center space-y-4 sm:space-y-5">
-                      <div className="text-center">
-                        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] mb-2 sm:mb-3 uppercase tracking-wider">
-                          GCash
-                        </p>
-                        <p className="text-xs sm:text-sm text-[#800A06]/70 font-[family-name:var(--font-crimson)]">
-                          Scan to send monetary gift
-                        </p>
-                      </div>
-                      <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-white rounded-xl p-3 sm:p-4 shadow-lg border-2 border-[#800A06]/20">
-                        <Image
-                          src="/QR/newQR.png"
-                          alt="QR Code"
-                          fill
-                          className="object-contain rounded-lg"
-                        />
-                      </div>
-                    </div>
+                  {/* Decorative bottom line */}
+                  <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
+                    <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/50" />
+                    <div className="w-1.5 h-1.5 bg-[#800A06]/60 rounded-full" />
+                    <div className="h-px w-12 sm:w-16 md:w-20 bg-[#800A06]/50" />
                   </div>
                 </div>
               </div>

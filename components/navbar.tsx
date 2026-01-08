@@ -99,8 +99,8 @@ export function Navbar() {
               {/* Monogram Image */}
               <div className="relative w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 group-hover:scale-105 transition-all duration-300">
                 <Image
-                  src="/monogram/monogram-new.png"
-                  alt="Mark Joey & Diana Grace Monogram"
+                  src="/monogram/monogram.png"
+                  alt="Jenley & Iris Monogram"
                   fill
                   className="object-contain"
                   priority
@@ -109,7 +109,7 @@ export function Navbar() {
 
               {/* Names with accent color on hover */}
               <div className="text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold group-hover:text-[#6A1F08]/80 transition-all duration-300 tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-[#6A1F08] uppercase whitespace-nowrap">
-                Mark & Diana
+                Jenley & Iris
               </div>
             </div>
           </Link>

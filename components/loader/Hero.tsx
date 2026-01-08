@@ -19,7 +19,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
           loop
           playsInline
         >
-          <source src="/video/hero-loop.mp4" type="video/mp4" />
+          <source src="/video/Chinese ink painting red plum blossom in southern China photography background video background.mp4" type="video/mp4" />
         </video>
 
         {/* Soft overlay tint */}
@@ -34,8 +34,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
           <div className="w-20 h-24 border border-[#800A06]/40 rounded-[2rem] flex items-center justify-center backdrop-blur-sm bg-[#EFCA93]/90">
             <div className="relative w-14 h-14">
               <Image
-                src="/monogram/monogram-new.png"
-                alt="Mark Joey & Diana Grace Monogram"
+                src="/monogram/monogram.png"
+                alt="Jenley & Iris Monogram"
                 fill
                 className="object-contain"
                 priority

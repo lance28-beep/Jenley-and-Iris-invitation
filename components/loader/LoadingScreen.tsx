@@ -42,8 +42,8 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           <div className="flex flex-col items-center justify-center z-10">
             <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32">
               <Image
-                src="/monogram/monogram-new.png"
-                alt="Mark Joey & Diana Grace Monogram"
+                src="/monogram/monogram.png"
+                alt="Jenley & Iris Monogram"
                 fill
                 className="object-contain"
                 priority
