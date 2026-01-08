@@ -385,7 +385,7 @@ export function Details() {
               {/* No Boxed Gifts */}
               <div className="bg-gradient-to-br from-[#F9F8F4]/30 via-[#F9F8F4]/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#9F8650]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
-                  <span className="font-semibold">Gift Policy:</span> We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected.
+                  <span className="font-semibold">Gift Policy:</span> This is a no-gifts event. We wholeheartedly acknowledge the time and effort it took for everyone to be with us. Your presence is our present — thank you.
                 </p>
               </div>
 

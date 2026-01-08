@@ -18,7 +18,7 @@ const faqItems: FAQItem[] = [
   {
     question: "What is the dress code?",
     answer:
-      "Guest Attire:\n• Ladies: Long gowns in earth tones (no prints, please)\n• Gentlemen: Barong Tagalog & black slacks or formal wear\n\nPrincipal Sponsors:\n• Ninangs: Long gowns in autumn tones or any color from our palette\n• Ninongs: Barong Tagalog with black slacks, or formal suits in black or palette colors\n\nPlease adhere to the dress code to maintain the elegance of our celebration. We recommend earth tones and natural colors that match our wedding theme.",
+      "Attire: Formal / Filipino Formal\n\nGentlemen: Are encouraged to wear Barong Tagalog or formal suits.\n\nLadies: May wear long gowns, cocktail dresses, or Filipiniana-inspired attire or Chinese inspired dresses. Please no black dresses.\n\nPlease adhere to the dress code to maintain the elegance of our celebration.",
   },
   {
     question: "When is the RSVP deadline?",
@@ -38,7 +38,7 @@ const faqItems: FAQItem[] = [
   {
     question: "What is your gift policy?",
     answer:
-      "We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected. Your presence at our wedding is the most precious gift we could ask for! If you wish to send a monetary gift, you can scan the GCash QR code in our Gift Registry section.",
+      "This is a no-gifts event. We wholeheartedly acknowledge the time and effort it took for everyone to be with us. Your presence is our present — thank you.\n\nFor more details, please see our [REGISTRY_LINK]Registry section[/REGISTRY_LINK].",
   },
   {
     question: "Can I take photos during the ceremony?",
@@ -164,6 +164,27 @@ export function FAQ() {
                                   }
                                 </a>
                                 {item.answer.split("[/RSVP_LINK]")[1]}
+                              </p>
+                            ) : item.answer.includes("[REGISTRY_LINK]") ? (
+                              <p className="text-[#800A06]/80 leading-relaxed text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] whitespace-pre-line">
+                                {item.answer.split("[REGISTRY_LINK]")[0]}
+                                <a
+                                  href="#registry"
+                                  className="text-[#800A06] underline font-semibold hover:text-[#800A06]/80 transition-colors inline-flex items-center gap-1"
+                                  onClick={(e) => {
+                                    e.preventDefault();
+                                    document
+                                      .getElementById("registry")
+                                      ?.scrollIntoView({ behavior: "smooth" });
+                                  }}
+                                >
+                                  {
+                                    item.answer.match(
+                                      /\[REGISTRY_LINK\](.*?)\[\/REGISTRY_LINK\]/,
+                                    )?.[1]
+                                  }
+                                </a>
+                                {item.answer.split("[/REGISTRY_LINK]")[1]}
                               </p>
                             ) : (
                               <p className="text-[#800A06]/80 leading-relaxed text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] whitespace-pre-line">

@@ -26,7 +26,7 @@ export function SnapShare() {
       ? window.location.href
       : "https://example.com";
   const driveLink =
-    "https://drive.google.com/drive/folders/18f_-4ZqeyIDZZ_5PR0raFGNRoPUmJCPg?usp=sharing";
+    "https://drive.google.com/drive/folders/1Q0Bd5kTKEGVh2hBzRKf4qPO0hAWUz-j7?usp=sharing";
   const hashtags = ["#JenleyAndIris"];  
   const shareText = `Join us in celebrating Jenley & Iris's special day! Check out their wedding website: ${websiteUrl} ${hashtags.join(" ")} 💕`;
 
